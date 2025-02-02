@@ -1,0 +1,43 @@
+<!-- FAQ List HTML Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ List</title>
+</head>
+<body>
+
+    <!-- Language Selection Dropdown -->
+    <form method="GET" action="/faqs/" id="language-form">
+        <label for="language">Select Language:</label>
+        <select name="lang" id="language" onchange="submitForm()">
+            <option value="en" {% if request.GET.lang == "en" %}selected{% endif %}>English</option>
+            <option value="hi" {% if request.GET.lang == "hi" %}selected{% endif %}>Hindi</option>
+            <option value="bn" {% if request.GET.lang == "bn" %}selected{% endif %}>Bengali</option>
+            <option value="te" {% if request.GET.lang == "te" %}selected{% endif %}>Telugu</option>
+            <option value="ta" {% if request.GET.lang == "ta" %}selected{% endif %}>Tamil</option>
+        </select>
+        <button type="submit">Change Language</button>
+    </form>
+
+    <!-- FAQ Content Section (Dynamic Content) -->
+    <div id="faq-container">
+        <!-- FAQ entries will be injected here -->
+        {% for faq in faqs %}
+            <div class="faq-item">
+                <h3>{{ faq.question }}</h3>
+                <p>{{ faq.answer }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        // JavaScript to handle form submission on language change
+        function submitForm() {
+            document.getElementById("language-form").submit();
+        }
+    </script>
+
+</body>
+</html>
