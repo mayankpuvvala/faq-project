@@ -26,8 +26,6 @@ The objective of this project is to:
 4. [Admin Panel](#admin-panel)
 5. [Unit Tests](#unit-tests)
 6. [Git & Version Control](#git--version-control)
-7. [Contribution Guidelines](#contribution-guidelines)
-8. [Deployment](#deployment)
 
 ## Installation
 
