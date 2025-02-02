@@ -1,0 +1,13 @@
+psycopg2
+djangorestframework
+django-ckeditor
+googletrans
+redis
+pytest
+pytest-django
+flake8
+gunicorn
+whitenoise
+docker
+django-heroku
+django-redis
