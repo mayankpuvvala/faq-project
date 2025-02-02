@@ -18,6 +18,8 @@ The objective of this project is to:
 - **Google Translate API**: Automatically translates FAQs into different languages during object creation.
 - **Admin Panel**: A user-friendly admin panel for managing FAQs.
 - **Unit Testing**: Unit tests using **pytest** to ensure correctness.
+- **Heroku Deployment**: Deployed the application to Heroku for production use.
+- **Docker Support**: Provided Docker and docker-compose.yml for local development and containerized deployment.
 
 ## Table of Contents
 1. [Installation](#installation)
